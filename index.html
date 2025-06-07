@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Frutinhas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script>
+      var frutas = [];
+
+      // Adicionando itens
+      frutas[0] = "🍌 Banana";
+      frutas[1] = "🍎 Maçã";
+      frutas[2] = "🍓 Morango";
+      frutas[3] = "🍇 Uva";
+
+      // Mais adições
+      frutas.push("🍍 Abacaxi");
+      frutas.unshift("🍊 Laranja");
+      frutas.splice(2, 0, "🍐 Pera");
+
+      // Remoções
+      frutas.pop();
+      frutas.shift();
+      frutas.splice(2, 1);
+
+      // Ordenando
+      frutas.sort();
+      frutas.reverse();
+
+      // Exibindo no documento
+      var i = 0;
+      while (i < frutas.length) {
+        document.write(frutas[i] + "<br />");
+        i++;
+      }
+    </script>
+  </body>
+</html>
